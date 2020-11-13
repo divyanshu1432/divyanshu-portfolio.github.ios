@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DIVYANSHU MISHRA</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+
+        <script type="" src="angular.js"></script>
+    </head>
+    <body onload="typing()" ng-app="portfolio" ng-controller="divyansh_portfolio">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark mt-1" style="background-color: #fff !important;" data-aos="fade-down">
+            <div class="container">
+                <a class="navbar-brand" href="#">Divyanshu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto" data-aos="fade-up">
+                        <li class="nav-item active ml-3">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <a class="nav-link" href="#workk">Work</a>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <a class="nav-link" href="#education">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xl-6 border-primary mt-5" data-aos="fade-right">
+                    <div class="intro">
+                        <h1>HELLO</h1>
+                        <h1>
+                            I'M <span style="color: #2980b9;"> <strong id="name"> </strong> </span>
+                        </h1>
+                        <h1 id="work"></h1>
+                    </div>
+                    <div class="home_button mt-5 mt-5">
+                        <a href="resume.pdf" class="btn resume" download> DOWNLOAD RESUME</a>
+                        <a href="#education" class="btn ml-2"> CONTACT ME</a>
+                    </div>
+
+                    <div class="icons d-flex flex-row">
+                        <a href="https://www.linkedin.com/in/divyanshu-mishra-81a0861ab/" class="linked" title="Divyanshu linked in"> <i class="fab fa-linkedin fa-2x"></i> </a>
+                        <a href="https://github.com/divyanshu1432" class="git" title="Divyanshu git hub"> <i class="fab fa-github fa-2x"></i> </a>
+                        <a href="https://twitter.com/Divyans12521617" class="twitter" title="Divyanshu facebook"> <i class="fab fa-twitter fa-2x"></i> </a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 avtar d-flex justify-content-center align-items-center" data-aos="fade-up">
+                    <img class="avtaar" src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg" />
+                </div>
+            </div>
+
+            <script>
+                let i = 0;
+                let text = "DIVYANSHU MISHRA";
+                let work = "WEB DEVELOPER";
+                let speed = 200;
+
+                function typing() {
+                    /*console.log(text);*/
+
+                    if (i < text.length) {
+                        document.getElementById("name").innerHTML += text.charAt(i);
+                        document.getElementById("work").innerHTML += work.charAt(i);
+
+                        i++;
+                        setTimeout(typing, speed);
+                    }
+                }
+            </script>
+
+            <!-- HOME FINISHED -->
+
+            <!-- ABOUT STARTED -->
+            <br />
+            <br />
+            <hr />
+            <section id="about" class="mt-5">
+                <h3 class="font-weight-bold text-center"><strong style="border-bottom: 2px solid blue; width: 50%; color: #ff7230;"> About me</strong></h3>
+
+                <div class="row">
+                    <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
+                        <p class="mt-5 text-justify text-gray-dark font-weight-bold" style="font-size: 18px; letter-spacing: 2px;">
+                            Hello I'm a web developer i'm passionate about dveloping the websites i'm fresher in this area of work, i have completed more than 10 projects in website development...
+                        </p>
+
+                        <img class="second_image" src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg" />
+                    </div>
+
+                    <div class="col col-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center">
+                        <div class="general_info mt-5 flex-column ml-5">
+                            <h4>Information</h4>
+
+                            <div class="inform d-flex flex-column" data-aos="zoom-in">
+                                <p>
+                                    <i class="far fa-user mt-3" style="color: #ff6040;"> <span class="text-dark text-muted ml-3"> DIVYANSHU MISHRA</span> </i>
+                                </p>
+
+                                <p>
+                                    <i class="fas fa-phone-alt" style="color: #ff6040;"> <span class="text-dark text-muted ml-3"> 7985935177 , 7318159864 </span> </i>
+                                </p>
+
+                                <p>
+                                    <i class="far fa-envelope" style="color: #ff6040;"> <span class="text-dark text-muted ml-3"> divyanshu.8174@gmail.com</span> </i>
+                                </p>
+                            </div>
+
+                            <h4 class="mt-3">Experience & support</h4>
+
+                            <div class="inform d-flex flex-column">
+                                <p>
+                                    <i class="fas fa-user-shield mt-3" style="color: #ff6040;">
+                                        <span class="text-dark text-muted ml-3">
+                                            Projects <br />
+                                            <strong class="ml-5"> 10+ completed </strong>
+                                        </span>
+                                    </i>
+                                </p>
+
+                                <p>
+                                    <i class="fas fa-headphones-alt" style="color: #ff6040;">
+                                        <span class="text-dark text-muted ml-3">
+                                            Support <br />
+                                            <strong class="ml-5"> online 24/7</strong>
+                                        </span>
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+        </div>
+
+        <!-- ABOUT FINISHED -->
+
+        <!-- SKILLS STARTED -->
+
+        <br />
+        <br />
+
+        <div class="container mt-5">
+            <section id="skills">
+                <h3 class="font-weight-bold text-center"><strong style="border-bottom: 2px solid blue; width: 50%; color: #ff7230;"> My Experties Area</strong></h3>
+
+                <div class="row mt-5 my-5">
+                    <div class="col-12 cpl-md-12 col-lg-6 col-xl-6">
+                        <h5 style="color: brown;">Frontend</h5>
+
+                        <br />
+
+                        <div class="progress_section">
+                            <div class="w-100">
+                                <h5 class="expert_h1 d-flex justify-content-between"><span> HTML / CSS </span> <strong style="margin-right: 50px;"> 90% </strong></h5>
+                                <div class="progress">
+                                    <div class="progress-bar 1 htm" role="progressbar"></div>
+                                </div>
+                            </div>
+
+                            <div class="w-100 my-5">
+                                <h5 class="expert_h2 mt-3 d-flex justify-content-between">JAVASCRIPT <strong style="margin-right: 50px;"> 70% </strong></h5>
+
+                                <div class="progress">
+                                    <div class="progress-bar js" role="progressbar"></div>
+                                </div>
+                            </div>
+
+                            <div class="w-100 my-5">
+                                <h5 class="expert_h3 mt-3 d-flex justify-content-between">jQUERY <strong style="margin-right: 50px;"> 70% </strong></h5>
+
+                                <div class="progress">
+                                    <div class="progress-bar jQUERY" role="progressbar"></div>
+                                </div>
+                            </div>
+
+                            <div class="w-100 my-5">
+                                <h5 class="expert_h4 mt-3 d-flex justify-content-between">Angular js<strong style="margin-right: 50px;"> 30% </strong></h5>
+
+                                <div class="progress">
+                                    <div class="progress-bar Angular" role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 cpl-md-12 col-lg-6 col-xl-6">
+                        <h5 style="color: brown;">Backend</h5>
+
+                        <br />
+
+                        <div class="progress_section">
+                            <div class="w-100">
+                                <h5 class="expert_h1 d-flex justify-content-between"><span> PHP </span> <strong style="margin-right: 50px;"> 60% </strong></h5>
+                                <div class="progress">
+                                    <div class="progress-bar 1 php" role="progressbar"></div>
+                                </div>
+                            </div>
+
+                            <div class="w-100 my-5">
+                                <h5 class="expert_h2 mt-3 d-flex justify-content-between">Mysql <strong style="margin-right: 50px;"> 60% </strong></h5>
+
+                                <div class="progress">
+                                    <div class="progress-bar sql" role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+        </div>
+        <!-- SKILLS FINISHED -->
+
+        <!--EDUCATION STARTED -->
+
+        <div class="">
+            <h3 class="font-weight-bold text-center"><strong style="border-bottom: 2px solid blue; width: 50%; color: #ff7230;"> My Education </strong></h3>
+            <section id="edcation" class="d-flex justify-content-center">
+                <table class="table table-dark mt-5">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">
+                                <strong style="text-align: center; font-size: 22px; color: #2ecc71; font-weight: bolder;"> 2014 - 2015 </strong> <br />
+                                <span class="text-muted" style="color: #f6f6f6 !important;"> Allahabad board </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <strong style="text-align: center; font-size: 22px; color: #2ecc71; font-weight: bolder;"> Intermediate </strong> <br />
+                                <span class="text-muted" style="color: #f6f6f6 !important;"> with 65% </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: center;">
+                                <strong style="text-align: center; font-size: 22px; color: #2ecc71; font-weight: bolder;"> 2016 - 2019 </strong> <br />
+                                <span class="text-muted" style="color: #f6f6f6 !important;"> Bteup Board </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <strong style="text-align: left; font-size: 22px; color: #2ecc71; font-weight: bolder;"> Diploma in textile </strong> <br />
+                                <span class="text-muted" style="color: #f6f6f6 !important;"> with 76% </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: center;">
+                                <strong style="text-align: center; font-size: 22px; color: #2ecc71; font-weight: bolder;"> 2019 - 2022 </strong> <br />
+                                <span class="text-muted" style="color: #f6f6f6 !important;"> V B S P U Jaunpur up </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <strong style="text-align: center; font-size: 22px; color: #2ecc71; font-weight: bolder;"> BTech in Electronics Engineering </strong> <br />
+                                <span class="text-muted" style="color: #f6f6f6 !important;"> Apearing </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            </section>
+            <br />
+            <br />
+            <hr />
+        </div>
+
+        <!--EDUCATION FINISHED -->
+
+        <div class="container mt-4">
+            <div id="workk">
+                <h3 class="font-weight-bold text-center"><strong style="border-bottom: 2px solid blue; width: 50%; color: #ff7230;"> My Work </strong></h3>
+                <section id="edcation" class="">
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_1">
+                                    <a href="https://divyanshu1432.github.io/scramble-meaning.github.ios/"> <img style="width: 100%;" src="https://thumbs.dreamstime.com/z/young-professional-woman-working-computer-50281210.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_2">
+                                    <a href="https://divyanshu1432.github.io/covid-status.github.io/"> <img style="width: 100%;" src="https://www.superprof.co.uk/blog/wp-content/uploads/2017/06/computer-700x467.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="text-center card-body work_3">
+                                    <a href="https://divyanshu1432.github.io/racing-car-game.github.ios/
+"> <img style="width: 100%;" src="https://www.thhsclassic.com/wp-content/uploads/2020/04/cup-of-coffee-1280537__340.jpg?x10483" /> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_4">
+                                    <a href="https://divyanshu1432.github.io/live-quotes.github.ios/"> <img style="width: 100%;" src="https://p0.pikist.com/photos/166/908/cup-of-coffee-laptop-office-computer-desk-work-technology-coffee-professional.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <button class="btn btn-success mt-4" type="button" data-toggle="collapse" data-target="#hiden" aria-expanded="false" aria-controls="collapseExample" style="border: none;">
+                    view more work
+                </button>
+
+                <section class="collapse" id="hiden">
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="text-center card-body work_5">
+                                    <a href="https://divyanshu1432.github.io/weatherupdate.github.ios/"> <img style="width: 100%;" src="https://st2.depositphotos.com/1048775/5833/i/450/depositphotos_58333535-stock-photo-electronics-and-notes-on-table.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_6">
+                                    <a href="https://divyanshu1432.github.io/snake_game.github.ios/"> <img style="width: 100%;" src="https://lh3.googleusercontent.com/proxy/_AB-DYf5DdUC1o7rjC3UeK50ZiRS9mlYYIKq-Ml4NuC-hGtc0vyJc9xV75O1wWYWRO2nToXh4WCNUb9UxRTS12t83tNs9FLg7cZzUGX-4IHj7kwmwInIXmG-" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="text-center card-body work_7">
+                                    <a href="https://divyanshu1432.github.io/chat-with-me.github.ios/"> <img style="width: 100%;" src="https://thumbs.dreamstime.com/z/young-professional-woman-working-computer-50281210.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_8">
+                                    <a href="https://divyanshu1432.github.io/acpl2.github.ios/"> <img style="width: 100%;" src="https://www.superprof.co.uk/blog/wp-content/uploads/2017/06/computer-700x467.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="text-center card-body work_9">
+                                    <a href="https://divyanshu1432.github.io/react-js-logo-design.github.ios/"> <img style="width: 100%;" src="https://st2.depositphotos.com/1048775/5833/i/450/depositphotos_58333535-stock-photo-electronics-and-notes-on-table.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_10">
+                                    <a href="https://divyanshu1432.github.io/camera-logo/"> <img style="width: 100%;" src="https://lh3.googleusercontent.com/proxy/_AB-DYf5DdUC1o7rjC3UeK50ZiRS9mlYYIKq-Ml4NuC-hGtc0vyJc9xV75O1wWYWRO2nToXh4WCNUb9UxRTS12t83tNs9FLg7cZzUGX-4IHj7kwmwInIXmG-" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="text-center card-body work_11">
+                                    <a href="https://divyanshu1432.github.io/instalogo.github.ios/"> <img style="width: 100%;" src="https://www.thhsclassic.com/wp-content/uploads/2020/04/cup-of-coffee-1280537__340.jpg?x10483" /> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body text-center work_12">
+                                    <a href="https://divyanshu1432.github.io/debit-card-ui.github.ios/"> <img style="width: 100%;" src="https://p0.pikist.com/photos/166/908/cup-of-coffee-laptop-office-computer-desk-work-technology-coffee-professional.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr />
+
+        <!-- WORK SECTION COMPLETED -->
+
+        <p style="margin-left: 100px;">
+            have you any idea ? <label for="yes"> yes </label> <input id="yes" type="checkbox" name="check" ng-model="idea" /> <label for="no"> no </label> <input id="no" type="checkbox" name="check" ng-model="no_idea" />
+        </p>
+        <div class="container" ng-show="no_idea">
+            <input type="button" class="btn btn-block btn-info disabled" value="ok thank you !" />
+        </div>
+
+        <div class="container-fluid" ng-show="idea">
+            <form method="post" action="">
+                <div class="form-group row" style="display: grid; place-items: center;">
+                    <div class="col-8 col-md-8 col-lg-4 col-xl-4">
+                        <label>name</label>
+                        <input type="text" name="f_name" class="form-control form control-sm" style="border: 1px solid red !important;" placeholder="name" />
+                    </div>
+                </div>
+
+                <div class="form-group row" style="display: grid; place-items: center;">
+                    <div class="col-8 col-md-8 col-lg-4 col-xl-4">
+                        <label>Email</label>
+                        <input type="email" name="f_name" class="form-control form control-sm" placeholder="example@gmail.com" style="border: 1px solid red !important;" />
+                    </div>
+                </div>
+
+                <div class="form-group row" style="display: grid; place-items: center;">
+                    <div class="col-8 col-md-8 col-lg-4 col-xl-4">
+                        <label>Your Idea</label>
+                        <textarea style="border: 1px solid red !important;" type="text" name="f_name" class="form-control form control-sm" placeholder="express your idea"> </textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="display: grid; place-items: center;">
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-4">
+                        <button class="btn btn-success" style="border: none;">send me</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+                <footer id="education"></footer>
+
+        <div class="container-fluid mt-5">
+            <h3 class="font-weight-bold text-center"><strong style="border-bottom: 2px solid blue; width: 50%; color: #ff7230;"> Contact </strong></h3>
+            <section id="edcation" class="">
+                <section id="contact" style="padding-top: 50px;">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center flex-column bg-dark">
+                            <p>
+                                <i class="far fa-user mt-3" style="color: #fff;"> <span class="text-light ml-3"> DIVYANSHU MISHRA</span> </i>
+                            </p>
+
+                            <p>
+                                <i class="fas fa-phone-alt" style="color: #fff;"> <span class="text-light ml-3"> 7985935177 , 7318159864 </span> </i>
+                            </p>
+
+                            <p>
+                                <i class="far fa-envelope" style="color: #fff;"> <span class="text-light ml-3"> divyanshu.8174@gmail.com</span> </i>
+                            </p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914546.9852502776!2d79.68365618016935!3d26.44124695092163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47831a987bf3%3A0x53df4d42cef9f8d6!2sKanpur%20Nagar%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1605243440058!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                frameborder="0"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTACT FINISHED -->
+
+                <!-- footer started -->
+
+            </section>
+        </div>
+    </footer>
+    </body>
+</html>
